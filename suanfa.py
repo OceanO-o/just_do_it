@@ -52,7 +52,9 @@ my_str = "abcebdirideawsleee"
 def counts(str1):
 	counts_dict = dict()
 	for key in str1:
-		counts_dict[key] = counts_dict[key] + 1 if key in counts_dict else 1
+	    counts_dict[key] = counts_dict[key] + 1 if key in counts_dict else 1
+	    # 更高级写法
+	    # count_dict[key] = count_dict.setdefault(key, 0) + 1
 	return counts_dict
 
 print(counts(my_str))
