@@ -43,3 +43,16 @@ def get_max(array, k):
 
 lll = [1, 9, 7, 7, 8]
 print(get_max(lll, 2))
+
+
+
+# 统计字符串出现的次数
+my_str = "abcebdirideawsleee"
+
+def counts(str1):
+	counts_dict = dict()
+	for key in str1:
+		counts_dict[key] = counts_dict[key] + 1 if key in counts_dict else 1
+	return counts_dict
+
+print(counts(my_str))
